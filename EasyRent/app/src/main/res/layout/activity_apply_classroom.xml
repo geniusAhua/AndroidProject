@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--标题栏-->
+        <com.hjq.bar.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            app:backButton="true"
+            app:title="申请教室"
+            app:titleColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/title_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_month_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="12月12日"/>
+
+            <LinearLayout
+                android:id="@+id/year_lunar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:text="2019年"/>
+
+                <TextView
+                    android:id="@+id/tv_lunar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:text="廿八"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.haibin.calendarview.CalendarLayout
+        android:id="@+id/calendar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:default_status="shrink"
+        app:calendar_show_mode="both_month_week_view"
+        app:calendar_content_view_id="@+id/recyclerView">
+
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:select_mode="single_mode"
+            app:calendar_padding="10dp"
+            app:calendar_height="50dp"
+            app:current_month_lunar_text_color="#CFCFCF"
+            app:current_month_text_color="#333333"
+            app:min_year="2004"
+            app:max_year="2020"
+            app:month_view="com.hznu.easyrent.MyUI.MyMonthView"
+            app:week_view="com.hznu.easyrent.MyUI.MyWeekView"
+            app:week_view_scrollable="true"
+            app:month_view_show_mode="mode_fix"
+            app:other_month_text_color="#e1e1e1"
+            app:other_month_lunar_text_color="#e1e1e1"
+            app:scheme_text="假"
+            app:scheme_text_color="#333"
+            app:scheme_theme_color="#128c4b"
+            app:selected_text_color="#fff"
+            app:selected_theme_color="@color/cutePink"
+            app:week_background="#fff"
+            app:week_start_with="sun"
+            app:week_text_color="#111" />
+
+        <LinearLayout
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffdfffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/choice1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="8:30 - 11:30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/choice2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="11:30 - 14:30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/choice3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="14:30 - 17:30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/choice4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="17:30 - 20:30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+<!--           gravity用来设置光标的起始位置从顶行开始，否则默认情况下是从中间行开始 -->
+<!--           最后一行用来显示控件的边线  -->
+            <EditText
+                android:id="@+id/reason_content"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="请输入租借原因"
+                android:enabled="true"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:background="@android:drawable/edit_text"/>
+
+            <Button
+                android:id="@+id/sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/cutePink"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="确认借用"/>
+
+        </LinearLayout>
+
+    </com.haibin.calendarview.CalendarLayout>
+
+</LinearLayout>

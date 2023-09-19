@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:id="@+id/place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient"
+        android:orientation="horizontal">
+
+        <!--标题栏-->
+        <com.hjq.bar.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_gradient"
+            app:backButton="false"
+            app:barStyle="transparent"
+            app:leftBackground="@null"
+            app:rightBackground="@null"
+            app:title="我的"
+            app:titleColor="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <!--    头像框     -->
+        <com.angel.view.SWImageView
+            android:id="@+id/head_pic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            app:type="circle"/>
+        <!--    个人基本信息      -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <!--    姓名 加粗显示     -->
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="加载失败"/>
+            <!--    普通信息 普通显示       -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:id="@+id/user_college"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/standard"
+                    android:text="加载失败"/>
+
+                <TextView
+                    android:id="@+id/user_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/standard"
+                    android:text="加载失败"/>
+
+            </LinearLayout>
+            <!--    性别 带图标      -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:id="@+id/sex_pic"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/male"/>
+
+                <TextView
+                    android:id="@+id/user_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/standard"
+                    android:text="加载失败"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    右侧箭头    -->
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+<!--退出选项-->
+    <com.hznu.easyrent.MyUI.DividerLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:dividerColor="@color/colorTrans"
+        app:dividerWidth="14dp"
+        app:headerDividerEnable="true">
+
+        <Button
+            android:id="@+id/change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="修改密码"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="退出登录"
+            android:textColor="@color/black"
+            android:shadowColor="@color/backgroundColor"/>
+
+    </com.hznu.easyrent.MyUI.DividerLinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_181">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="F:/apache-tomcat-9.0.29/lib/servlet-api.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0"/>
+	<classpathentry kind="lib" path="E:/下载/Java13/第十三次课课件及演示程序（数据库I）/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="F:/java/JSONJAR/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="F:/java/JSONJAR/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="F:/java/JSONJAR/commons-lang-2.5(1).jar"/>
+	<classpathentry kind="lib" path="F:/java/JSONJAR/commons-logging.jar"/>
+	<classpathentry kind="lib" path="F:/java/JSONJAR/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/java/JSONJAR/json-lib-2.1-jdk15.jar"/>
+	<classpathentry kind="lib" path="G:/javaproject/AndroidWeb/src/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="G:/javaproject/AndroidWeb/src/json-20190722.jar"/>
+	<classpathentry kind="lib" path="G:/javaproject/AndroidWeb/src/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="G:/javaproject/AndroidWeb/src/commons-fileupload-1.3.3.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

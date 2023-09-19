@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/place_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gradient"
+            android:orientation="horizontal">
+
+            <!--标题栏-->
+            <com.hjq.bar.TitleBar
+                android:id="@+id/title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/shape_gradient"
+                app:backButton="true"
+                app:barStyle="transparent"
+                app:leftBackground="@null"
+                app:rightBackground="@null"
+                app:title="注册"
+                app:titleColor="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="right"
+                android:text="账号:"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/regist_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="请输入学号"
+                android:inputType="number"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="right"
+                android:text="密码:"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/regist_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+<!--        注册按钮      -->
+        <com.hznu.easyrent.MyUI.MyProgressBtn
+            android:id="@+id/register"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:text="注册"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/regist_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cutePink"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+</RelativeLayout>

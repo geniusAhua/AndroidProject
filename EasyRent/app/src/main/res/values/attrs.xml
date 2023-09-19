@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DividerLinearLayout">
+        <attr name="headerDividerEnable" format="boolean"/>
+        <attr name="footerDividerEnable" format="boolean"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="dividerWidth" format="dimension"/>
+        <attr name="headerDividerPaddingStart" format="dimension"/>
+        <attr name="headerDividerPaddingEnd" format="dimension"/>
+        <attr name="footerDividerPaddingStart" format="dimension"/>
+        <attr name="footerDividerPaddingEnd" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="GroupRecyclerView">
+        <attr name="group_height" format="dimension" />
+        <attr name="group_child_offset" format="dimension" />
+        <attr name="group_background" format="color" />
+        <attr name="group_text_color" format="color" />
+        <attr name="group_text_size" format="dimension" />
+        <attr name="group_center" format="boolean" />
+        <attr name="group_padding_left" format="dimension" />
+        <attr name="group_padding_right" format="dimension" />
+        <attr name="group_has_header" format="boolean" />
+    </declare-styleable>
+
+</resources>

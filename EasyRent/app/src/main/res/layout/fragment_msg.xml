@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:id="@+id/place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient"
+        android:orientation="horizontal" >
+
+        <com.hjq.bar.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_gradient"
+            app:barStyle="transparent"
+            app:backButton="false"
+            app:title="消息"
+            app:titleColor="@null"
+            app:leftBackground="@null"
+            app:rightBackground="@null"/>
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableFooterTranslationContent="true">
+
+        <com.scwang.smartrefresh.header.BezierCircleHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/order_msg_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:divider="@color/backgroundColor"
+                android:dividerHeight="10dp" />
+
+            <!--    列表里没有数据是显示出来    -->
+            <TextView
+                android:id="@+id/empty_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/standard"
+                android:textSize="17sp"
+                android:text="没有啦，不要再盯着人家看啦"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/end_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/standard"
+            android:textSize="17sp"
+            android:text="下拉刷新即可查看所有数据"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="defaultDividerColor">#ffcccccc</color>
+    <color name="cutePink">#fff43a68</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="lightBlack">#ff4a4a4a</color>
+    <color name="standard">#ff707070</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="backgroundColor">#ffe5e5e5</color>
+</resources>
